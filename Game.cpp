@@ -6,14 +6,14 @@ using namespace std;
 int main() {
     hammam
     int a, b;
-    scanf("%d %d", &a, &b);
+    cin >> a >> b;
     int arr[a];
     for (int i = 0; i < a; i++) {
-        scanf("%d", &arr[i]);
+        cin >> arr[i];
     }
 
     for (int i = 0; i < b; i++) {
-        int x; scanf("%d", &x);
+        int x; cin >> x;
         int left = 0, right = a - 1;
         int answer = -1;
 
@@ -27,8 +27,9 @@ int main() {
             }
         }
 
-        printf("%d\n", answer);
+        cout << answer << '\n';
     }
 
     return 0;
 }
+
